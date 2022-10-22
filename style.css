@@ -1,5 +1,8 @@
 body{
     background-color: #403F48;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none; 
 }
 
 .row{
@@ -48,9 +51,11 @@ body{
 
 input{
     width: 95%;
-    height: 3.5vh;
-    font-size: 3vh;
+    max-height: 95%;
+    font-size: 12pt;
+    padding-left: 10px;
     border: 0px;
+    outline: none;
 }
 
 .for-icon{
@@ -62,10 +67,26 @@ input{
 .input-container{
     width: 55%;
     margin: 25px 23.5% 40px 23.5%;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 15px;
+    flex-wrap:nowrap;
+    display: inline-flex;
+    height: 30px;
 }
 
 .head{
     flex-direction: column;
 }
+
+.serch-button{
+    height: 100%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.grow:hover {
+    transition-duration: 200ms;
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+  }
