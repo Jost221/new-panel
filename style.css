@@ -2,7 +2,8 @@ body{
     background-color: #403F48;
     -moz-user-select: none;
     -khtml-user-select: none;
-    user-select: none; 
+    user-select: none;
+    font-family: Arial Black,Arial Bold,Gadget,sans-serif; 
 }
 
 .row{
@@ -36,8 +37,8 @@ body{
 
 .icon{
     border-radius: 5px;
-    width: 35px;
-    height: 35px;
+    width: 3em;
+    height: 3em;
 }
 .item{
     font-size: 12px;
@@ -50,7 +51,7 @@ body{
 }
 
 input{
-    width: 95%;
+    width: 93%;
     max-height: 95%;
     font-size: 12pt;
     padding-left: 10px;
@@ -59,7 +60,7 @@ input{
 }
 
 .for-icon{
-    margin: 10px 20px 10px 20px;
+    margin: 10px 19px 10px 19px;
     width: 40px;
     height: 40px;
 }
@@ -67,26 +68,60 @@ input{
 .input-container{
     width: 55%;
     margin: 25px 23.5% 40px 23.5%;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: white;
     border-radius: 15px;
     flex-wrap:nowrap;
     display: inline-flex;
     height: 30px;
+    justify-content:space-between;
 }
 
 .head{
     flex-direction: column;
 }
 
-.serch-button{
-    height: 100%;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+.grow{
+    transition: transform .2s;
 }
 
 .grow:hover {
-    transition-duration: 200ms;
-    -webkit-transform: scale(1.4);
-    -ms-transform: scale(1.4);
-    transform: scale(1.4);
-  }
+    transform: scale(1.05); 
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.gg-search {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+    color: black;
+    transform: rotate(90deg);
+    top: 4px;
+    left: 10px;
+}
+.gg-search::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 8px;
+    background: currentColor;
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 12px
+}
+
+.serch-button{
+    height: 100%;
+    width: 7%;
+}

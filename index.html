@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./icon.png">
+    <link rel="icon" href="./new-tab-white.svg">
     <link rel="stylesheet" href="./style.css">
     <title>Новаяя вкладка</title>
 </head>
@@ -17,8 +17,10 @@
                 <div class="column">
                     <div class="item not_center">Тут будет прикол</div>
                 </div>
-                <div class="column center">
-                    <img class="main_img" src="./best_image.png">
+                <div class="column center grow">
+                    <a href="https://rt.pornhub.com/">
+                        <img class="main_img" src="./best_image.png">
+                    </a>
                 </div>
                 <div class="column">
                     <div class="item not_center">А тут ещё один</div>
@@ -26,55 +28,65 @@
             </div>
 
             <div class="input-container">
-                <input type="text" autofocus autocomplete="on" class="input column">
-                <img class="serch-button column" src="./search-ico.png">
+                <input id="input" type="text" autofocus autocomplete="on" class="input column" title="Поиск в Яндексе" placeholder="Поиск в Яндексе">
+                <div class="serch-button" onclick="search()">
+                    <i class="gg-search"></i>
+                </div>
             </div>
-
                 <div class="row buttom">
                     <div class="column for-icon">
                         <div class="row">
                             <div class="column grow">
-                                <img class="icon" src="./gitlab-logo.png">
-                                <div class="item">Gitlab</div>
+                                <a href="https://gitlab.com/dashboard/groups">
+                                    <img class="icon" src="./gitlab-logo.png">
+                                    <div class="item">Gitlab</div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="column for-icon">
                         <div class="row">
                             <div class="column grow">
-                                <img class="icon" src="./tg-icon.png">
-                                <div class="item">Telegram</div>
+                                <a href="https://web.telegram.org/k/">
+                                    <img class="icon" src="./tg-icon.png">
+                                    <div class="item">Telegram</div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="column for-icon">
                         <div class="row">
                             <div class="column grow">
-                                <img class="icon" src="./yt-icon.png">
-                                <div class="item">Youtube</div>
+                                <a href="https://www.youtube.com/">
+                                    <img class="icon" src="./yt-icon.png">
+                                    <div class="item">Youtube</div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="column for-icon">
                         <div class="row">
                             <div class="column grow">
-                                <img class="icon" src="./yan-translate.jpg">
-                                <div class="item">Translater</div>
+                                <a href="https://translate.yandex.ru/">
+                                    <img class="icon" src="./yan-translate.jpg">
+                                    <div class="item">Translater</div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="column for-icon">
                         <div class="row">
                             <div class="column grow">
-                                <img class="icon" src="./mail.png">
-                                <div class="item">Mail.ru</div>
+                                <a href="https://mail.ru/">
+                                    <img class="icon" src="./mail.png">
+                                    <div class="item">Mail.ru</div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
 </body>
-
+<script charset="UTF-8" src="./input.js"></script>
 </html>
