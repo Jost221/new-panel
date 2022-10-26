@@ -8,5 +8,9 @@
   })();
 
 function search() {
-    window.location.href = 'https://yandex.ru/search/?text=' + document.getElementById('input').value;
+  var text = document.getElementById('input').value
+  if (text!=""){
+    window.location.href = 'https://yandex.ru/search/?text=' + text;
+  }
+    
 };

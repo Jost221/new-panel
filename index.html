@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./new-tab-white.svg">
+    <link rel="icon" href="./icon.png">
     <link rel="stylesheet" href="./style.css">
     <title>Новаяя вкладка</title>
 </head>
@@ -15,7 +15,12 @@
         <div class="row head">
             <div class="row top">
                 <div class="column">
-                    <div class="item not_center">Тут будет прикол</div>
+                    <div class="menu">
+                        <img src="./dots-menu.png" onclick="active_menu()">
+                        <div class="dropdown">
+                            
+                        </div>
+                    </div>
                 </div>
                 <div class="column center grow">
                     <a href="https://rt.pornhub.com/">
@@ -23,10 +28,10 @@
                     </a>
                 </div>
                 <div class="column">
-                    <div class="item not_center">А тут ещё один</div>
+                    <div class="item not_center"></div>
                 </div>
             </div>
-
+            
             <div class="input-container">
                 <input id="input" type="text" autofocus autocomplete="on" class="input column" title="Поиск в Яндексе" placeholder="Поиск в Яндексе">
                 <div class="serch-button" onclick="search()">
@@ -35,13 +40,11 @@
             </div>
                 <div class="row buttom">
                     <div class="column for-icon">
-                        <div class="row">
-                            <div class="column grow">
-                                <a href="https://gitlab.com/dashboard/groups">
-                                    <img class="icon" src="./gitlab-logo.png">
-                                    <div class="item">Gitlab</div>
-                                </a>
-                            </div>
+                        <div class="row content">
+                            <a href="https://gitlab.com/dashboard/groups">
+                                <img class="icon" src="./gitlab-logo.png">
+                                <div class="item">Gitlab</div>
+                            </a>
                         </div>
                     </div>
                     <div class="column for-icon">
@@ -87,6 +90,8 @@
                 </div>
             </div>
         </div>
+
 </body>
 <script charset="UTF-8" src="./input.js"></script>
+<script charset="UTF-8" src="./menu.js"></script>
 </html>

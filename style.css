@@ -1,7 +1,5 @@
 body{
     background-color: #403F48;
-    -moz-user-select: none;
-    -khtml-user-select: none;
     user-select: none;
     font-family: Arial Black,Arial Bold,Gadget,sans-serif; 
 }
@@ -61,23 +59,34 @@ input{
 
 .for-icon{
     margin: 10px 19px 10px 19px;
-    width: 40px;
-    height: 40px;
+}
+
+.for-icon img{
+    width: 48px;
+    height: 48px;
+    margin: 0px auto;
+}
+img{
+    margin: 0px auto;
 }
 
 .input-container{
     width: 55%;
-    margin: 25px 23.5% 40px 23.5%;
+    margin: 25px auto 40px auto;
     background-color: white;
     border-radius: 15px;
     flex-wrap:nowrap;
     display: inline-flex;
     height: 30px;
-    justify-content:space-between;
+    /* justify-content:space-between; */
 }
 
 .head{
     flex-direction: column;
+}
+
+.column{
+    min-width: 3em;
 }
 
 .grow{
@@ -91,6 +100,10 @@ input{
 a{
     color: white;
     text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
 .gg-search {
@@ -105,7 +118,8 @@ a{
     color: black;
     transform: rotate(90deg);
     top: 4px;
-    left: 10px;
+    left: -6px;
+    float:right;
 }
 .gg-search::after {
     content: "";
@@ -118,10 +132,39 @@ a{
     background: currentColor;
     transform: rotate(-45deg);
     top: 10px;
-    left: 12px
+    left: 12px;
 }
 
 .serch-button{
     height: 100%;
     width: 7%;
+}
+
+.menu img{
+    position: relative;
+    top: 0.5em;
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
+}
+
+.menu{
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 12px;
+    position: relative;
+    top: 2em;
+    left: 2em;
+}
+
+.menu:hover{
+    background-color: #33333b;
+}
+
+.dropdown{
+    /* z-index: 10; */
+    margin-top: 1em;
+    background-color: black;
 }
