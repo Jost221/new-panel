@@ -10,16 +10,68 @@
     <title>Новаяя вкладка</title>
 </head>
 
-
 <body>
     <div class="container">
         <div class="row head">
             <div class="row top">
                 <div class="column">
                     <div class="menu">
-                        <img src="./dots-menu.png" onclick="active_menu()">
+                        <img class="icon-menu" src="./dots-menu.png">
                         <div class="dropdown">
-                            
+                            <div class="row buttom">
+                                <div class="column for-icon">
+                                    <div class="row">
+                                        <div class="column grow">
+                                            <a href="https://mail.ru/">
+                                                <img class="icon" src="./mail.png">
+                                                <div class="item">Mail</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column for-icon">
+                                    <div class="row">
+                                        <div class="column grow">
+                                            <a href="https://gmail.com/">
+                                                <img class="icon" src="./gmail-ico.png">
+                                                <div class="item">Gmail</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column for-icon">
+                                    <div class="row">
+                                        <div class="column grow">
+                                            <a href="https://drive.google.com/drive/my-drive">
+                                                <img class="icon" src="./disk.svg">
+                                                <div class="item">Drive</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row buttom">
+                                <div class="column for-icon">
+                                    <div class="row">
+                                        <div class="column grow">
+                                            <a href="https://meet.google.com/">
+                                                <img class="icon" src="./meet.svg" width="32px" height="32px">
+                                                <div class="item">Meet</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column for-icon">
+                                    <div class="row">
+                                        <div class="column grow">
+                                            <a href="https://yandex.ru/maps/">
+                                                <img class="icon" src="./map.png">
+                                                <div class="item">Map</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -32,67 +84,71 @@
                     <div class="item not_center"></div>
                 </div>
             </div>
-            
+
             <div class="input-container">
-                <input id="input" type="text" autofocus autocomplete="on" class="input column" title="Поиск в Яндексе" placeholder="Поиск в Яндексе">
+                <input id="input" type="text" autofocus autocomplete="on" class="input column" title="Поиск в Яндексе"
+                    placeholder="Поиск в Яндексе">
                 <div class="serch-button" onclick="search()">
                     <i class="gg-search"></i>
                 </div>
             </div>
-                <div class="row buttom">
-                    <div class="column for-icon">
-                        <div class="row content">
+            <div class="row buttom">
+                <div class="column for-icon">
+                    <div class="row">
+                        <div class="column grow">
                             <a href="https://gitlab.com/dashboard/groups">
                                 <img class="icon" src="./gitlab-logo.png">
                                 <div class="item">Gitlab</div>
                             </a>
                         </div>
                     </div>
-                    <div class="column for-icon">
-                        <div class="row">
-                            <div class="column grow">
-                                <a href="https://web.telegram.org/k/">
-                                    <img class="icon" src="./tg-icon.png">
-                                    <div class="item">Telegram</div>
-                                </a>
-                            </div>
+                </div>
+                <div class="column for-icon">
+                    <div class="row">
+                        <div class="column grow">
+                            <a href="https://web.telegram.org/k/">
+                                <img class="icon" src="./tg-icon.png">
+                                <div class="item">Telegram</div>
+                            </a>
                         </div>
                     </div>
-                    <div class="column for-icon">
-                        <div class="row">
-                            <div class="column grow">
-                                <a href="https://www.youtube.com/">
-                                    <img class="icon" src="./yt-icon.png">
-                                    <div class="item">Youtube</div>
-                                </a>
-                            </div>
+                </div>
+                <div class="column for-icon">
+                    <div class="row">
+                        <div class="column grow">
+                            <a href="https://www.youtube.com/">
+                                <img class="icon" src="./yt-icon.png">
+                                <div class="item">Youtube</div>
+                            </a>
                         </div>
                     </div>
-                    <div class="column for-icon">
-                        <div class="row">
-                            <div class="column grow">
-                                <a href="https://translate.yandex.ru/">
-                                    <img class="icon" src="./yan-translate.jpg">
-                                    <div class="item">Translater</div>
-                                </a>
-                            </div>
+                </div>
+                <div class="column for-icon">
+                    <div class="row">
+                        <div class="column grow">
+                            <a href="https://translate.yandex.ru/">
+                                <img class="icon" src="./yan-translate.jpg">
+                                <div class="item">Translater</div>
+                            </a>
                         </div>
                     </div>
-                    <div class="column for-icon">
-                        <div class="row">
-                            <div class="column grow">
-                                <a href="https://mail.ru/">
-                                    <img class="icon" src="./mail.png">
-                                    <div class="item">Mail.ru</div>
-                                </a>
-                            </div>
+                </div>
+                <div class="column for-icon">
+                    <div class="row">
+                        <div class="column grow">
+                            <a href="https://vk.com/">
+                                <img class="icon" src="./vk.svg">
+                                <div class="item">Vk</div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 </body>
 <script charset="UTF-8" src="./input.js"></script>
 <script charset="UTF-8" src="./menu.js"></script>
+
 </html>
